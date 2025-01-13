@@ -10,6 +10,14 @@
 
     <p class="warning">Ta strona jest darmowa, uważaj na oszustów sprzedających ją.</p>
 
+   <script>
+        // Sprawdzenie, czy użytkownik jest zalogowany
+        if (localStorage.getItem('isLoggedIn') !== 'true') {
+            // Jeśli nie, przekierowanie do strony logowania
+            window.location.href = "index.html";
+        }
+    </script>
+
     <div class="guide_holder">
         <div class="top_holder">
             <p class="guide_title">Instrukcja</p>
